@@ -17,6 +17,22 @@ fab -f set_hosts_password.py go_fab
 fab -f set_hosts_passwords.py go_fab
 ```
 
+# コマンドのリターンコードが成功じゃなくても無視して進める
+
+[run_anyway_all.py](run_anyway_all.py)
+
+```
+fab -f run_anyway_all.py go_fab
+```
+
+# コマンドのリターンコードが成功じゃなくても無視して進める(特定コマンド実行のみ)
+
+[run_anyway_partly.py](run_anyway_partly.py)
+
+```
+fab -f run_anyway_partly.py go_fab
+```
+
 # コマンド実行成功と判断するコマンドのリターンコードを指定する
 
 [ok_ret_codes.py](ok_ret_codes.py)
